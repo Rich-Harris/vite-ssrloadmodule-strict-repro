@@ -1,0 +1,11 @@
+{
+	"type": "module",
+	"dependencies": {
+		"vite": "^3.0.2"
+	},
+	"scripts": {
+		"test": "vite build && npm run test:dev && npm run test:build",
+		"test:dev": "echo \">>> TESTING DEV\" && node run-dev.js",
+		"test:build": "echo \">>> TESTING BUILD\" && node dist/app.js"
+	}
+}
